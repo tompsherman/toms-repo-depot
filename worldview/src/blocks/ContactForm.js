@@ -4,7 +4,10 @@ const ContactForm = () => {
     return (
         <>
             <form>
-                <input />
+                <input 
+                    type="text"
+                    
+                />
                 <input />
                 <input />
                 <input />

@@ -33,6 +33,22 @@
   color: whitesmoke;
 }
 
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.half {
+  width: 50%;
+}
+
 .App {
   text-align: center;
 }

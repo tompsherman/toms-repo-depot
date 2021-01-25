@@ -1,10 +1,14 @@
 import React from 'react'
 
-const LeftSection = () => {
+const LeftSection = (props) => {
+    const {projObj} = props
+
     return (
         <div className="left">
-            <p className="half">text</p>
-            <img className="half" href="" alt="picture"/>
+            <h3>{projObj.title}</h3>
+            <h3>{projObj.stack}</h3>
+            <p className="half">{projObj.descript}</p>
+            <img className="half" href={projObj.image} alt="picture"/>
         </div>
     )
 }

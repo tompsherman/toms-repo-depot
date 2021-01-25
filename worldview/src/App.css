@@ -49,6 +49,24 @@
   width: 50%;
 }
 
+.third {
+  width: 25%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.on {
+  background-color: #1b1e23;
+  color: whitesmoke;
+}
+
+.quote {
+  font-size: 2rem;
+}
+
 .App {
   text-align: center;
 }

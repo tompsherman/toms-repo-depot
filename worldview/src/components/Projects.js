@@ -10,27 +10,27 @@ const Projects = () => {
         {
             title: "My Sleep Tracker",
             role: "UI frontend developer",
-            repo: "",
+            repo: "https://github.com/Build-Week-Sleep-Tracker-Team/Marketing-Page",
             deployed: "",
-            image: "",
+            image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1611569240/resume%20repo/sleep_tracker_screenshot_dh9xrb.png",
             stack: "HTML | CSS | JavaScript | NodeJs",
             descript: ""
         },
         {
             title: "Village Book Builders",
             role: "React developer",
-            repo: "",
+            repo: "https://github.com/Lambda-School-Labs/village-book-builders-fe-c",
             deployed: "",
-            image: "",
+            image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1611569787/resume%20repo/vbb_portal_rxdxjc.png",
             stack: "HTML | CSS | JavaScript | NodeJs",
             descript: ""
         },
         {
             title: "JS Jr. Dev Job Board",
-            role: "backend developer",
-            repo: "",
+            role: "full stack developer",
+            repo: "https://github.com/JS-Jr-Dev-Job-Board",
             deployed: "",
-            image: "",
+            image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1611570080/resume%20repo/js_webdev_wires_husjtc.png",
             stack: "HTML | CSS | JavaScript | NodeJS | Mongoose",
             descript: ""
         },

@@ -5,10 +5,12 @@ const LeftSection = (props) => {
 
     return (
         <div className="left">
-            <h3>{projObj.title}</h3>
-            <h3>{projObj.stack}</h3>
-            <p className="half">{projObj.descript}</p>
-            <img className="half" href={projObj.image} alt="picture"/>
+            <div className="half">
+                <h3>{projObj.title}</h3>
+                <h3>{projObj.stack}</h3>
+                <p className="half">{projObj.descript}</p>
+            </div>
+            <img className="half" src={projObj.image} alt="picture"/>
         </div>
     )
 }

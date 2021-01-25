@@ -7,6 +7,7 @@ const LeftSection = (props) => {
         <div className="left">
             <div className="half">
                 <h3>{projObj.title}</h3>
+                <h4>{projObj.role}</h4>
                 <h3>{projObj.stack}</h3>
                 <p className="half">{projObj.descript}</p>
             </div>

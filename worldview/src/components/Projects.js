@@ -22,7 +22,7 @@ const Projects = () => {
             repo: "https://github.com/Lambda-School-Labs/village-book-builders-fe-c",
             deployed: "",
             image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1611569787/resume%20repo/vbb_portal_rxdxjc.png",
-            stack: "HTML | CSS | JavaScript | NodeJs",
+            stack: "HTML | CSS | JavaScript | React | Redux | NodeJs",
             descript: ""
         },
         {
@@ -34,6 +34,15 @@ const Projects = () => {
             stack: "HTML | CSS | JavaScript | NodeJS | Mongoose",
             descript: ""
         },
+        {
+            title: "Better Clock",
+            role: "full stack developer",
+            repo: "https://github.com/tompsherman/better-clock",
+            deployed: "https://better-clock.vercel.app/",
+            image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1611570597/resume%20repo/bettclock_h0tkjc.png",
+            stack: "HTML | CSS | JavaScript",
+            descript: ""
+        },
     ]
     return (
         <>
@@ -42,6 +51,7 @@ const Projects = () => {
                 <RightSection projObj={projObj[0]}/>               
                 <LeftSection projObj={projObj[1]}/>
                 <RightSection projObj={projObj[2]}/>
+                <LeftSection projObj={projObj[3]}/>
             </div>
         </>
     )

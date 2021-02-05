@@ -14,6 +14,10 @@ const Home = () => {
         history.push('/bio')
     }
 
+    const goHereResume = () => {
+        history.push('/resume')
+    }
+
     const goHereBlog = () => {
         history.push('/blog')
     }
@@ -27,6 +31,9 @@ const Home = () => {
             </div>
             <div className="card" onClick={goHerePro}>
                 <h3>projects</h3>
+            </div>
+            <div className="card" onClick={goHereResume}>
+                <h3>resume</h3>
             </div>
             <div className="card" onClick={goHereBlog}>
                 <h3>blog</h3>

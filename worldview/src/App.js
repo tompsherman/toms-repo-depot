@@ -7,6 +7,7 @@ import Home from './components/Home'
 import Bio from './components/Bio'
 import Blog from './components/Blog'
 import Projects from './components/Projects'
+import Resume from './components/Resume'
 
 const App = () => {
   const history = useHistory()
@@ -18,6 +19,9 @@ const App = () => {
   return (
     <>
       <Switch>
+        <Route path='/resume'>
+          <Resume />
+        </Route>
         <Route path='/bio'>
           <Bio />
         </Route>

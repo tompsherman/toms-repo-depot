@@ -3,7 +3,11 @@ import React from 'react'
 const RightSection = (props) => {
     
     const {projObj} = props
-    console.log(projObj.image)
+
+    let descMap = projObj.descript.map(bullet => {
+        return <ul class="a">{bullet}</ul>
+    })
+
     return (
         <div className="right">
                 <img className="half" src={projObj.image} alt="picture"/>
@@ -11,7 +15,7 @@ const RightSection = (props) => {
                     <h3>{projObj.title}</h3>
                     <h4>{projObj.role}</h4>
                     <h3>{projObj.stack}</h3>
-                    <p className="half">{projObj.descript}</p>
+                    {descMap}
                 </div>
         </div>
     )

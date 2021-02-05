@@ -45,8 +45,22 @@
   justify-content: center;
 }
 
+ul.a {
+  list-style-type: circle;
+  list-style-position: outside;
+}
+
+.full {
+  width: 100%;
+}
+
 .half {
   width: 50%;
+}
+
+.imghalf {
+  width: 50%;
+  height: 50vh;
 }
 
 .third {

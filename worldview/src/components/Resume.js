@@ -72,11 +72,12 @@ const Resume = () => {
             repo: "https://www.wgmd.com/",
             deployed: "",
             image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1612522323/resume%20repo/WGMD-with-Red-White-Blue-No-Outlines-On-White-780x340x72-20200721-1900_n87gtx.png",
-            stack: "journalism | communication | broadcasting | audio engineering | ",
+            stack: "journalism | communication | broadcasting | audio engineering | photography",
             descript: [
-                "",
-                "",
-                "",
+                "Prepare daily newscasts reporting local events covering a 5,500 square mile territory",
+                "Research, write, report, record, edit 12-15 news stories daily for both live & recorded broadcasts",
+                "Attended press conferences, events, and locations to develop stories, record audio, and take photographs",
+                "Voted 'Best in Delaware' for local radio news coverage",
             ]
         },
         {
@@ -89,9 +90,10 @@ const Resume = () => {
             image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1612522635/resume%20repo/dogfish_logo_y6uyav.jpg",
             stack: "public speaking | hospitality | suppy chain management | customer service | food & beverage",
             descript: [
-                "",
-                "",
-                "",
+                "Created a unique, customer-oriented, fact-laden tour of the brewery, its history, & manufacturing processes delivered with passion, charisma, & showmanship twice daily to groups of 30+ people.",
+                "Provided customer service and information to up to 1000+ guests daily, while manning the bar, food truck, host stand, and/or shop.",
+                "Assisted Bar, Food Truck, and Shop managers with supply chain management operations including FIFO stock rotation, inventory counts, implementing control systems, & breaking down functional silos",
+                "Helped to set up and manage special events as needed (Point-to-Point horse race, WACAAW, Analog-A-GoGo)",
             ]
         },
         {
@@ -101,7 +103,7 @@ const Resume = () => {
             location: "remote",
             repo: "",
             deployed: "",
-            image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1612538468/resume%20repo/tom_at_desk_ayac6o.jpg",
+            image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1612567264/resume%20repo/tom_africa_image_writing_freelance_jkaibx.png",
             stack: " writing | communications | journalism | research | photography",
             descript: [
                 "solutions for change",
@@ -113,11 +115,27 @@ const Resume = () => {
             title: "Founder & Logistics Coordinator",
             role: "The Run For Veterans",
             date: "",
-            location: "",
+            location: "remote & mobile",
             repo: "",
             deployed: "",
             image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1612538835/resume%20repo/run_for_vets_action_fsorgm.jpg",
-            stack: " non-profit organizations | logistics | marketing",
+            stack: " non-profit organizations | logistics | business development",
+            descript: [
+                "Co-founded a 501(c)3 non-profit organization to support veterans returning from the Iraq & Afghanistan Wars mentally, physically, & socially",
+                "Planned the logistics for a runner to complete a year-long, 3,600 mile run across America from Oceanside, California to Portland, Maine including the route planning and cost projections",
+                "Developed mission, vision, marketing, goals; completed outreach and built relationships with partner organizations",
+                "Provided physical support for the runner during the Georgia to Virginia segment of the run."
+            ]
+        },
+        {
+            title: "Full Stack Web Developer",
+            role: "Lambda School",
+            date: "July 2020 - March 2021",
+            location: "remote",
+            repo: "",
+            deployed: "",
+            image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1612551013/resume%20repo/lambdaschool_jts8lq.png",
+            stack: " HTML | CSS | JavaScript | Node.js | Python | SQLite ",
             descript: [
                 "",
                 "",
@@ -125,14 +143,29 @@ const Resume = () => {
             ]
         },
         {
-            title: "",
-            role: "",
-            date: "",
-            location: "",
+            title: "Certified Scrum Master",
+            role: "Scrum Inc.",
+            date: "October 2020 - November 2020",
+            location: "remote",
             repo: "",
             deployed: "",
-            image: "",
-            stack: " |  | ",
+            image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1612550981/resume%20repo/scrum_inc_cnajtl.png",
+            stack: " Agile | SCRUM | project management",
+            descript: [
+                "",
+                "",
+                "",
+            ]
+        },
+        {
+            title: "BBA - Finance & Supply Chain Management",
+            role: "The College of William & Mary",
+            date: "August 2007 - December 2010",
+            location: "Williamsburg, VA",
+            repo: "",
+            deployed: "",
+            image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1612550986/resume%20repo/willima_and_mary_ofo6cc.png",
+            stack: " finance | supply chain management | geology ",
             descript: [
                 "",
                 "",
@@ -142,7 +175,24 @@ const Resume = () => {
     ]
     return (
         <div>
-            <h3>This is Tom's Resume</h3>
+            <div className="button-container">
+                <div>
+                    <p>skills</p>
+                </div>
+                <div>
+                    <p>employment</p>
+                </div>
+                <div>
+                    <p>education</p>
+                </div>
+                <div>
+                    <p>contact</p>
+                </div>
+                <div>
+                    <p>references</p>
+                </div>
+            </div>
+            <h2>Employment history</h2>
             <LeftSection projObj={projObj[0]}/>               
             <RightSection projObj={projObj[1]}/>
             <LeftSection projObj={projObj[2]}/>
@@ -151,6 +201,10 @@ const Resume = () => {
             <RightSection projObj={projObj[5]}/>
             <LeftSection projObj={projObj[6]}/>
             <RightSection projObj={projObj[7]}/>
+            <h2>Education</h2>
+            <LeftSection projObj={projObj[8]}/>
+            <RightSection projObj={projObj[9]}/>
+            <LeftSection projObj={projObj[10]}/>
         </div>
     )
 }

@@ -60,14 +60,36 @@ ul.a {
 
 .imghalf {
   width: 50%;
-  height: 50vh;
+  height: auto;
 }
 
 .third {
   width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fifth {
+  width: 18%;
+  display: flex;
+  justify-content: center;
+}
+
+.eighth {
+  width: 8%;
+  display: flex;
+  justify-content: center;
 }
 
 .flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.big-screen {
   display: flex;
   flex-direction: row;
 }

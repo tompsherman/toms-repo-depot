@@ -10,7 +10,7 @@ const RightSection = (props) => {
 
     return (
         <div className="right">
-                <img className="half" src={projObj.image} alt="picture"/>
+                <img className="imghalf" src={projObj.image} alt="picture"/>
                 <div className="half">
                     <h3>{projObj.title}</h3>
                     <h4>{projObj.role}</h4>

@@ -25,7 +25,7 @@ const Resume = () => {
             deployed: "",
             image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1612517998/resume%20repo/btd_logo_o9gskx.jpg",
             stack: "journalism | communication | broadcasting | audio engineering | ",
-            descript: ["Prepare daily newscasts reporting local events covering a 1,500 sq. mi. territory", "Research, write, report, record, edit up to 8 stories per day"]
+            descript: ["Prepare daily newscasts reporting local events covering a 5,500 sq. mi. territory", "Research, write, report, record, edit up to 8 stories per day"]
         },
         {
             title: "Executive Director",
@@ -78,6 +78,7 @@ const Resume = () => {
                 "Research, write, report, record, edit 12-15 news stories daily for both live & recorded broadcasts",
                 "Attended press conferences, events, and locations to develop stories, record audio, and take photographs",
                 "Voted 'Best in Delaware' for local radio news coverage",
+                "Prepare stories for distribution via radio broadcast, website, and social media"
             ]
         },
         {
@@ -173,23 +174,108 @@ const Resume = () => {
             ]
         },
     ]
+
+    let hardSkills = [
+        "Photoshop", 
+        "Inkscape",
+        "Illustrator",
+        "WordPress",
+        "Vector Graphics",
+        "Algorithms",
+        "Wireframes",
+        "Git",
+        "DNS Management",
+        "Debugging",
+        "FE/BE Frameworks",
+        "excel", 
+        "google Sheets",
+        "powerpoint", 
+        "google slides",
+        "audacity", 
+        "mixcraft",
+        "SEO",
+        "storytelling",
+        "premiere", 
+        "Video Editor"
+    ]
+
+    let softSkills = [
+        "Leadership",
+        "Collaboration",
+        "Communication",
+        "Creativity",
+        "Critical Thinking",
+        "Problem Solving",
+        "Visual Thinking",
+        "Organization",
+        "Enthusiasm",
+        "Work Ethic",
+        "Remote Work",
+        "Logistics",
+        "media outreach",
+        "public speaking",
+        "problem solving",
+
+    ]
+
+    let programLangs = [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "nodeJS",
+        "express",
+        "sqlite",
+        "MongoDB",
+        "React",
+        "Redux",
+        "Python",
+        "jest",
+        "cypress",
+        "knex",
+        "jsx"
+    ]
+
     return (
         <div>
             <div className="button-container">
-                <div>
+                <div className="one">
                     <p>skills</p>
                 </div>
-                <div>
+                <div className="two">
                     <p>employment</p>
                 </div>
-                <div>
+                <div className="three">
                     <p>education</p>
                 </div>
-                <div>
+                <div className="four">
                     <p>contact</p>
                 </div>
-                <div>
+                <div className="five">
                     <p>references</p>
+                </div>
+            </div>
+            <h2>Skills</h2>
+            <div className="skill flex-row">
+                {
+                    programLangs.map(skill => {
+                        return <p className="eighth">{skill}</p>
+                    })
+                }
+            </div>
+            <div className="big-screen">
+                <div className="skill flex-row">
+                    {
+                        hardSkills.map(skill => {
+                            return <p className="third">{skill}</p>
+                        })
+                    }
+                </div>
+                <div className="skill flex-row">
+                    {
+                        softSkills.map(skill => {
+                            return <p className="third">{skill}</p>
+                        })
+                    }
                 </div>
             </div>
             <h2>Employment history</h2>

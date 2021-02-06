@@ -15,7 +15,7 @@ const LeftSection = (props) => {
                 <h3>{projObj.stack}</h3>
                 {descMap}
             </div>
-            <img className="half" src={projObj.image} alt="picture"/>
+            <img className="imghalf" src={projObj.image} alt="picture"/>
         </div>
     )
 }

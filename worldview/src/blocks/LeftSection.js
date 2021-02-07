@@ -2,6 +2,7 @@ import React from 'react'
 
 const LeftSection = (props) => {
     const {projObj} = props
+    const {extra} = props
 
     let descMap = projObj.descript.map(bullet => {
         return <ul class="a">{bullet}</ul>
@@ -9,13 +10,15 @@ const LeftSection = (props) => {
 
     return (
         <div className="left">
-            <div className="half">
-                <h3>{projObj.title}</h3>
-                <h4>{projObj.role}</h4>
-                <h3>{projObj.stack}</h3>
+            <div className="half border">
+                <div className="flex-row border">
+                    <h3>{projObj.title}</h3>
+                    <h4>{projObj.role}</h4>
+                </div>
+                <h3 style={{textAlign: "center"}}>{projObj.stack}</h3>
                 {descMap}
             </div>
-            <img className="imghalf" src={projObj.image} alt="picture"/>
+            <img className="imghalf" src={projObj.image} alt="picture" style={extra}/>
         </div>
     )
 }

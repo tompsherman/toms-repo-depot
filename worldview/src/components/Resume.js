@@ -25,7 +25,13 @@ const Resume = () => {
             deployed: "",
             image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1612517998/resume%20repo/btd_logo_o9gskx.jpg",
             stack: "journalism | communication | broadcasting | audio engineering | ",
-            descript: ["Prepare daily newscasts reporting local events covering a 5,500 sq. mi. territory", "Research, write, report, record, edit up to 8 stories per day"]
+            descript: [
+                "Prepare daily newscasts reporting local events covering a 5,500 square mile territory", 
+                "Research, write, report up to 8 stories per day",
+                "Collaborate with other news anchors remotely to provide & integrate extra reports into our news coverage",
+                "Build a fully remote newsroom for recording and editing reports",
+                "Creating a site & system to curate upcoming stories queue",
+            ]
         },
         {
             title: "Executive Director",
@@ -98,7 +104,7 @@ const Resume = () => {
             ]
         },
         {
-            title: "Freelance Writer & Journalist",
+            title: "Freelance Writer, Journalist, Web Developer",
             role: "multiple organizations",
             date: "Nov. 2013 - Present",
             location: "remote",
@@ -107,9 +113,13 @@ const Resume = () => {
             image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1612567264/resume%20repo/tom_africa_image_writing_freelance_jkaibx.png",
             stack: " writing | communications | journalism | research | photography",
             descript: [
-                "solutions for change",
-                "The Harlem Times",
-                "North American Management Company",
+                "Pitch stories to editors and publications",
+                "Research, report on event and stories both in person and remotely",
+                "Provide high quality writing and photography to create compelling stories",
+                "Manage groups of staff writers, create editorial calendars, edit submitted stories",
+                "Prepare stories for consumption across all 3 major mediums: print, web, and social",
+                "Design, update, and execute website strategy",
+                "Member of the National Press Club",
             ]
         },
         {
@@ -159,8 +169,8 @@ const Resume = () => {
             ]
         },
         {
-            title: "BBA - Finance & Supply Chain Management",
-            role: "The College of William & Mary",
+            title: "BBA - Finance & Supply Chain Mgmnt",
+            role: "College of William & Mary",
             date: "August 2007 - December 2010",
             location: "Williamsburg, VA",
             repo: "",
@@ -184,9 +194,9 @@ const Resume = () => {
         "Algorithms",
         "Wireframes",
         "Git",
-        "DNS Management",
+        "DNS Mgmnt",
         "Debugging",
-        "FE/BE Frameworks",
+        "FE/BE Framework",
         "excel", 
         "google Sheets",
         "powerpoint", 
@@ -214,8 +224,6 @@ const Resume = () => {
         "Logistics",
         "media outreach",
         "public speaking",
-        "problem solving",
-
     ]
 
     let programLangs = [
@@ -235,62 +243,185 @@ const Resume = () => {
         "jsx"
     ]
 
+    let contact = {
+        title: "Tom Sherman",
+        role: "full stack web developer && certified scrum master",
+        date: "",
+        location: "Milford, DE [willing to relocate]",
+        repo: "",
+        deployed: "",
+        image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1612646738/resume%20repo/tom_gal_r1piuo.png",
+        stack: "front end | back end | full stack | scrum master",
+        descript: [
+            "phone: (302) 703-7088",
+            "email: tpsherman703@gmail.com",
+            "address: ",
+        ]
+    }
+
+    let heightPop = {
+        height: "30vh", 
+        width: "auto",
+        margin: "auto"
+    }
+
+    let spacing = {
+        display: "flex",
+        justifyContent: "space-between"
+    }
+
+    console.log("arrow icon attributes: RoundIcons")
+    console.log("home icon attribute: Dave Gandy")
+
     return (
         <div>
-            <div className="button-container">
-                <div className="one">
-                    <p>skills</p>
-                </div>
-                <div className="two">
-                    <p>employment</p>
-                </div>
-                <div className="three">
-                    <p>education</p>
-                </div>
-                <div className="four">
-                    <p>contact</p>
-                </div>
-                <div className="five">
-                    <p>references</p>
-                </div>
+            <div className="button-container" id="top">
+                <a href="#skills" className="one">
+                    {/* <div className="one"> */}
+                        <p>skills</p>
+                    {/* </div> */}
+                </a>
+                <a href="#employment" className="two">
+                    {/* <div className="two"> */}
+                        <p>employment</p>
+                    {/* </div> */}
+                </a>
+                <a href="#education" className="three">
+                    {/* <div className="three"> */}
+                        <p>education</p>
+                    {/* </div> */}
+                </a>
+                <a href="#contact" className="four">
+                    {/* <div className="four"> */}
+                        <p>contact</p>
+                    {/* </div> */}
+                </a>
+                <a href="#references" className="five">
+                    {/* <div className="five"> */}
+                        <p>references</p>
+                    {/* </div> */}
+                </a>
             </div>
-            <h2>Skills</h2>
-            <div className="skill flex-row">
-                {
-                    programLangs.map(skill => {
-                        return <p className="eighth">{skill}</p>
-                    })
-                }
-            </div>
-            <div className="big-screen">
+            <section id="skills">
+                
+                <div className="one flex-head">
+                    <h2 style={{margin: "auto 0 auto 1%"}}>Skills</h2>
+                    <div className="third">
+                        <a href="#top">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-backward"/>
+                        </a>
+                        <a href="#top">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612715648/resume%20repo/home_bjd6l7.png" className="head-button-home"/>
+                        </a>
+                        <a href="#employment">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-forward"/>
+                        </a>
+                    </div>
+                </div>
+
+                <h3 style={{textAlign: 'center'}} className="border">Programming Languages</h3>
                 <div className="skill flex-row">
                     {
-                        hardSkills.map(skill => {
-                            return <p className="third">{skill}</p>
+                        programLangs.map(skill => {
+                            return <p className="eighth border">{skill}</p>
                         })
                     }
                 </div>
-                <div className="skill flex-row">
-                    {
-                        softSkills.map(skill => {
-                            return <p className="third">{skill}</p>
-                        })
-                    }
+                <div className="big-screen">
+                    <h3 className="rotate border">Hard Skills</h3>
+                    <div className="skill flex-row">
+                        {
+                            hardSkills.map(skill => {
+                                return <p className="third border">{skill}</p>
+                            })
+                        }
+                    </div>
+                    <h3 className="rotate border">Soft Skills</h3>
+                    <div className="skill flex-row">
+                        {
+                            softSkills.map(skill => {
+                                return <p className="third border">{skill}</p>
+                            })
+                        }
+                    </div>
                 </div>
-            </div>
-            <h2>Employment history</h2>
-            <LeftSection projObj={projObj[0]}/>               
-            <RightSection projObj={projObj[1]}/>
-            <LeftSection projObj={projObj[2]}/>
-            <RightSection projObj={projObj[3]}/>
-            <LeftSection projObj={projObj[4]}/>
-            <RightSection projObj={projObj[5]}/>
-            <LeftSection projObj={projObj[6]}/>
-            <RightSection projObj={projObj[7]}/>
-            <h2>Education</h2>
-            <LeftSection projObj={projObj[8]}/>
-            <RightSection projObj={projObj[9]}/>
-            <LeftSection projObj={projObj[10]}/>
+            </section>
+            <section id="employment">
+                <div className="two flex-head">
+                    <h2 style={{margin: "auto 0 auto 1%"}}>Employment history</h2>
+                    <div className="third">
+                        <a href="#skills">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-backward"/>
+                        </a>
+                        <a href="#top">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612715648/resume%20repo/home_bjd6l7.png" className="head-button-home"/>
+                        </a>
+                        <a href="#education">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-forward"/>
+                        </a>
+                    </div>
+                </div>
+                <LeftSection projObj={projObj[0]}/>               
+                <RightSection projObj={projObj[1]}/>
+                <LeftSection projObj={projObj[2]}/>
+                <RightSection projObj={projObj[3]}/>
+                <LeftSection projObj={projObj[4]}/>
+                <RightSection projObj={projObj[5]}/>
+                <LeftSection projObj={projObj[6]}/>
+                <RightSection projObj={projObj[7]}/>
+            </section>
+            <section id="education">
+                <divc className="three flex-head">
+                    <h2 style={{margin: "auto 0 auto 1%"}}>Education</h2>
+                    <div className="third">
+                        <a href="#employment">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-backward"/>
+                        </a>
+                        <a href="#top">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612715648/resume%20repo/home_bjd6l7.png" className="head-button-home"/>
+                        </a>
+                        <a href="#contact">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-forward"/>
+                        </a>
+                    </div>
+                </divc>
+                <LeftSection projObj={projObj[8]} />
+                <RightSection projObj={projObj[9]} extra={heightPop} spacing={spacing}/>
+                <LeftSection projObj={projObj[10]} extra={heightPop}/>
+            </section>
+            <section id="contact">
+                <div className="four flex-head">
+                    <h2 style={{margin: "auto 0 auto 1%"}}>Contact</h2>
+                    <div className="third">
+                        <a href="#education">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-backward"/>
+                        </a>
+                        <a href="#top">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612715648/resume%20repo/home_bjd6l7.png" className="head-button-home"/>
+                        </a>
+                        <a href="#references">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-forward"/>
+                        </a>
+                    </div>
+                </div>
+                <RightSection projObj={contact}/>
+            </section>
+            <section id="references">
+                <div className="five flex-head">
+                    <h2 style={{margin: "auto 0 auto 1%"}}>references</h2>
+                    <div className="third">
+                        <a href="#contact">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-backward"/>
+                        </a>
+                        <a href="#top">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612715648/resume%20repo/home_bjd6l7.png" className="head-button-home"/>
+                        </a>
+                        <a href="#top">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-forward"/>
+                        </a>
+                    </div>
+                </div >
+            </section>
         </div>
     )
 }

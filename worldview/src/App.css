@@ -1,11 +1,32 @@
 * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 1%;
   padding: 1%;
 }
 
+.border {
+  border: 1px solid black;
+}
+
 .one {
   background-color: #5fad56;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  width: 30%;
+  height: auto;
+}
+
+a:visited {
+  color: whitesmoke;
+}
+
+a:hover {
+  background-color: #1b1e23;
   color: whitesmoke;
 }
 
@@ -64,7 +85,7 @@ ul.a {
 }
 
 .third {
-  width: 25%;
+  width: 27%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +107,54 @@ ul.a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.flex-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a .head-button-forward {
+  width: 30%;
+  height: auto;
+}
+
+.head-button-forward {
+  filter: invert(100%) sepia(1%) saturate(49%) hue-rotate(206deg)
+    brightness(116%) contrast(92%);
+  border: none;
+}
+
+a .head-button-backward {
+  width: 30%;
+  height: auto;
+}
+
+.head-button-backward {
+  filter: invert(100%) sepia(1%) saturate(49%) hue-rotate(206deg)
+    brightness(116%) contrast(92%);
+  border: none;
+  transform: rotate(180deg);
+}
+
+a .head-button-home {
+  width: 30%;
+  height: auto;
+}
+
+.head-button-home {
+  filter: invert(100%) sepia(1%) saturate(49%) hue-rotate(206deg)
+    brightness(116%) contrast(92%);
+  border: none;
+}
+
+.rotate {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  text-align: center;
 }
 
 .big-screen {

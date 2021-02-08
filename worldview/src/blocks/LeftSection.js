@@ -11,7 +11,7 @@ const LeftSection = (props) => {
     return (
         <div className="left">
             <div className="half border">
-                <div className="flex-row border">
+                <div className="flex-card-row border">
                     <h3>{projObj.title}</h3>
                     <h4>{projObj.role}</h4>
                 </div>

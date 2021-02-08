@@ -104,7 +104,7 @@ const Resume = () => {
             ]
         },
         {
-            title: "Freelance Writer, Journalist, Web Developer",
+            title: "Freelance Communications Specialist",
             role: "multiple organizations",
             date: "Nov. 2013 - Present",
             location: "remote",
@@ -118,6 +118,7 @@ const Resume = () => {
                 "Provide high quality writing and photography to create compelling stories",
                 "Manage groups of staff writers, create editorial calendars, edit submitted stories",
                 "Prepare stories for consumption across all 3 major mediums: print, web, and social",
+                "Write & distribute press releases",
                 "Design, update, and execute website strategy",
                 "Member of the National Press Club",
             ]
@@ -306,7 +307,7 @@ const Resume = () => {
                 
                 <div className="one flex-head">
                     <h2 style={{margin: "auto 0 auto 1%"}}>Skills</h2>
-                    <div className="third">
+                    <div className="third mobile">
                         <a href="#top">
                             <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-backward"/>
                         </a>
@@ -349,7 +350,7 @@ const Resume = () => {
             <section id="employment">
                 <div className="two flex-head">
                     <h2 style={{margin: "auto 0 auto 1%"}}>Employment history</h2>
-                    <div className="third">
+                    <div className="third mobile">
                         <a href="#skills">
                             <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-backward"/>
                         </a>
@@ -373,7 +374,7 @@ const Resume = () => {
             <section id="education">
                 <divc className="three flex-head">
                     <h2 style={{margin: "auto 0 auto 1%"}}>Education</h2>
-                    <div className="third">
+                    <div className="third mobile">
                         <a href="#employment">
                             <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-backward"/>
                         </a>
@@ -387,12 +388,12 @@ const Resume = () => {
                 </divc>
                 <LeftSection projObj={projObj[8]} />
                 <RightSection projObj={projObj[9]} extra={heightPop} spacing={spacing}/>
-                <LeftSection projObj={projObj[10]} extra={heightPop}/>
+                <LeftSection projObj={projObj[10]} />
             </section>
             <section id="contact">
                 <div className="four flex-head">
                     <h2 style={{margin: "auto 0 auto 1%"}}>Contact</h2>
-                    <div className="third">
+                    <div className="third mobile">
                         <a href="#education">
                             <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-backward"/>
                         </a>
@@ -409,7 +410,7 @@ const Resume = () => {
             <section id="references">
                 <div className="five flex-head">
                     <h2 style={{margin: "auto 0 auto 1%"}}>references</h2>
-                    <div className="third">
+                    <div className="third mobile">
                         <a href="#contact">
                             <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-backward"/>
                         </a>

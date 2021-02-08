@@ -14,7 +14,7 @@ const RightSection = (props) => {
         <div className="right" style={spacing}>
                 <img className="imghalf" src={projObj.image} alt="picture" style={extra}/>
                 <div className="half border">
-                    <div className="flex-row border">
+                    <div className="flex-card-row border">
                         <h3>{projObj.title}</h3>
                         <h4>{projObj.role}</h4>
                     </div>

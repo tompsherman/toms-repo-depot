@@ -110,6 +110,13 @@ ul.a {
   justify-content: space-around;
 }
 
+.flex-card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .flex-head {
   display: flex;
   flex-direction: row;
@@ -186,9 +193,108 @@ a .head-button-home {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 1300px) {
+  .third {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .eighth {
+    width: 20%;
+  }
+  .third {
+    width: 100%;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .imghalf {
+    margin: auto;
+  }
+  .half {
+    width: 75%;
+    margin: auto;
+  }
+
+  a .head-button-home {
+    width: 30%;
+    height: auto;
+  }
+
+  a .head-button-backward {
+    width: 30%;
+    height: auto;
+  }
+
+  a .head-button-forward {
+    width: 30%;
+    height: auto;
+  }
+
+  .flex-head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile {
+    width: 30%;
+  }
+
+  .flex-card-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 476px) {
+  .imghalf {
+    width: 100%;
+  }
+  .half {
+    width: 100%;
+  }
+  .button-container {
+    flex-direction: column;
+  }
+  .one {
+    width: 100%;
+  }
+  .two {
+    width: 100%;
+  }
+  .three {
+    width: 100%;
+  }
+  .four {
+    width: 100%;
+  }
+  .five {
+    width: 100%;
+  }
+
+  a .head-button-home {
+    width: 75%;
+    height: auto;
+  }
+
+  a .head-button-backward {
+    width: 75%;
+    height: auto;
+  }
+
+  a .head-button-forward {
+    width: 75%;
+    height: auto;
   }
 }
 

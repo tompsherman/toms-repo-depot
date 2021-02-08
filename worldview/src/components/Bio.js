@@ -47,7 +47,7 @@ const Bio = () => {
                     </div>
                 </div> */}
                 <p>born and raised in the Washington D.C. area</p>
-                <p>GED -> college; finance degree, merrill lynch</p>
+                <p>GED --- college; finance degree, merrill lynch</p>
                 <p>The Run for Veterans</p>
                 <p>Arkansas</p>
                 <p>comedy, writing</p>
@@ -56,7 +56,7 @@ const Bio = () => {
                 <p>Craft brewing, tour guide, MoonCat Comedy</p>
                 <p>WGMD, journalism</p>
                 <p>inventor, The New Calendar</p>
-                <p>pandemic --> Lambda School</p>
+                <p>pandemic --- Lambda School</p>
 
             </div>
         </>

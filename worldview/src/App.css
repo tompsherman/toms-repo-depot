@@ -256,7 +256,7 @@ a .head-button-home {
   }
 }
 
-@media (max-width: 476px) {
+@media (max-width: 653px) {
   .imghalf {
     width: 100%;
   }

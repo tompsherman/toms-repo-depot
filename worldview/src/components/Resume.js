@@ -1,6 +1,7 @@
 import React from 'react'
 import LeftSection from '../blocks/LeftSection'
 import RightSection from '../blocks/RightSection'
+import Projects from './Projects'
 
 const Resume = () => {
     let projObj = [
@@ -292,14 +293,14 @@ const Resume = () => {
                         <p>education</p>
                     {/* </div> */}
                 </a>
-                <a href="#contact" className="four">
-                    {/* <div className="four"> */}
-                        <p>contact</p>
+                <a href="#projects" className="four">
+                    {/* <div className="five"> */}
+                        <p>projects</p>
                     {/* </div> */}
                 </a>
-                <a href="#references" className="five">
-                    {/* <div className="five"> */}
-                        <p>references</p>
+                <a href="#contact" className="five">
+                    {/* <div className="four"> */}
+                        <p>contact</p>
                     {/* </div> */}
                 </a>
             </div>
@@ -381,7 +382,7 @@ const Resume = () => {
                         <a href="#top">
                             <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612715648/resume%20repo/home_bjd6l7.png" className="head-button-home"/>
                         </a>
-                        <a href="#contact">
+                        <a href="#projects">
                             <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-forward"/>
                         </a>
                     </div>
@@ -390,8 +391,25 @@ const Resume = () => {
                 <RightSection projObj={projObj[9]} extra={heightPop} spacing={spacing}/>
                 <LeftSection projObj={projObj[10]} />
             </section>
-            <section id="contact">
+            <section id="projects">
                 <div className="four flex-head">
+                    <h2 style={{margin: "auto 0 auto 1%"}}>projects</h2>
+                    <div className="third mobile">
+                        <a href="#education">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-backward"/>
+                        </a>
+                        <a href="#top">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612715648/resume%20repo/home_bjd6l7.png" className="head-button-home"/>
+                        </a>
+                        <a href="#contact">
+                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-forward"/>
+                        </a>
+                    </div>
+                </div >
+                    <Projects />
+            </section>
+            <section id="contact">
+                <div className="five flex-head">
                     <h2 style={{margin: "auto 0 auto 1%"}}>Contact</h2>
                     <div className="third mobile">
                         <a href="#education">
@@ -406,22 +424,6 @@ const Resume = () => {
                     </div>
                 </div>
                 <RightSection projObj={contact}/>
-            </section>
-            <section id="references">
-                <div className="five flex-head">
-                    <h2 style={{margin: "auto 0 auto 1%"}}>references</h2>
-                    <div className="third mobile">
-                        <a href="#contact">
-                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-backward"/>
-                        </a>
-                        <a href="#top">
-                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612715648/resume%20repo/home_bjd6l7.png" className="head-button-home"/>
-                        </a>
-                        <a href="#top">
-                            <img src="https://res.cloudinary.com/dzom9ahsn/image/upload/v1612713858/resume%20repo/right-arrow_simrlh.png" className="head-button-forward"/>
-                        </a>
-                    </div>
-                </div >
             </section>
         </div>
     )

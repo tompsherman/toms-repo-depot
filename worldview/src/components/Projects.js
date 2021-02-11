@@ -14,7 +14,7 @@ const Projects = () => {
             deployed: "",
             image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1611569240/resume%20repo/sleep_tracker_screenshot_dh9xrb.png",
             stack: "HTML | CSS | JavaScript | NodeJs",
-            descript: ""
+            descript: [""]
         },
         {
             title: "Village Book Builders",
@@ -23,7 +23,7 @@ const Projects = () => {
             deployed: "",
             image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1611569787/resume%20repo/vbb_portal_rxdxjc.png",
             stack: "HTML | CSS | JavaScript | React | Redux | NodeJs",
-            descript: ""
+            descript: [""]
         },
         {
             title: "JS Jr. Dev Job Board",
@@ -32,7 +32,7 @@ const Projects = () => {
             deployed: "",
             image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1611570080/resume%20repo/js_webdev_wires_husjtc.png",
             stack: "HTML | CSS | JavaScript | NodeJS | Mongoose",
-            descript: ""
+            descript: [""]
         },
         {
             title: "Better Clock",
@@ -41,7 +41,7 @@ const Projects = () => {
             deployed: "https://better-clock.vercel.app/",
             image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1611570597/resume%20repo/bettclock_h0tkjc.png",
             stack: "HTML | CSS | JavaScript",
-            descript: ""
+            descript: [""]
         },
     ]
     return (

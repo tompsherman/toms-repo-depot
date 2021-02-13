@@ -8,6 +8,15 @@ import RightSection from '../blocks/RightSection'
 const Projects = () => {
     let projObj = [
         {
+            title: "Story Squad",
+            role: "UI/UX co-lead",
+            repo: "https://github.com/Lambda-School-Labs/story-squad-fe-a",
+            deployed: "",
+            image: "https://res.cloudinary.com/dzom9ahsn/image/upload/v1613178444/resume%20repo/story-squad_shot_trxser.png",
+            stack: " JavaScript | React | Redux | Python | NodeJs",
+            descript: [""]
+        },
+        {
             title: "My Sleep Tracker",
             role: "UI frontend developer",
             repo: "https://github.com/Build-Week-Sleep-Tracker-Team/Marketing-Page",
@@ -44,14 +53,21 @@ const Projects = () => {
             descript: [""]
         },
     ]
+
+    let heightPop = {
+        height: "40vh", 
+        width: "auto",
+        margin: "auto"
+    }
+
     return (
         <>
             <div>
-                <h3>This is Tom's Project Page</h3>
-                <RightSection projObj={projObj[0]}/>               
+                <RightSection projObj={projObj[0]} extra={heightPop}/>               
                 <LeftSection projObj={projObj[1]}/>
                 <RightSection projObj={projObj[2]}/>
                 <LeftSection projObj={projObj[3]}/>
+                <RightSection projObj={projObj[4]}/>
             </div>
         </>
     )
